@@ -1,0 +1,47 @@
+@import './variable.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.dot {
+    color:$color5;
+    font-size: 50px;
+}
+
+.art2 {
+    border-bottom: 2px solid #E3E3E3;
+    padding-bottom: 80px;
+}
+
+.over {
+    background: linear-gradient(to top, #E93D2D 20%, #DA0E41 80%);
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+        // @media(max-width:930px) {
+        //     // width: 360px;
+        //     flex: 0 0 100%;
+        //     max-width:100%;
+        //     text-align: center;
+        //     padding: 20px;
+        // }

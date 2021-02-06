@@ -1,0 +1,39 @@
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            margin: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            color:$color11;
+            text-transform: uppercase;
+        
+        }
+    }
+    select {
+        color:$color11;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        background-color:$color12;
+        border: none;
+        option {
+            margin: 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+    @media(max-width:630px) {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,79 @@
+.main {
+    margin-left:auto;
+    padding: 0 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    margin-bottom: 200px;
+    article {
+        padding: 20px;
+        color: $color3;
+        height: 300px;
+        .item1 {
+            margin-top: 40px;
+            border: 1px solid $color9;
+        }
+        .item2 {
+            margin-top: 40px;
+            box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 1px 5px rgba(0, 0, 0, 0.22);
+            transform: translateY(-20px);
+        
+        }
+        .item3 {
+            margin-top: 40px;
+            border: 1px solid $color9;
+        }
+        img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    }
+    &-img {
+        display: flex;
+    }
+    &-info{
+        width: 70%;
+        height: auto;
+        padding: 25px;
+        color: $color9;
+        font-weight: 600;
+        position: relative;
+        .shadow {
+            box-shadow: 2px 2px 12px 6px #E3E3E3 !important;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 11px;
+            transform: rotate(-135deg);
+            background-color: $color3;
+            border: 1px solid $color9;
+            border-right: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            bottom: -8px;
+            left: 50%;
+            left: 20px;
+        }
+        span {
+            display: block;
+            color: $color2;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+    &-name {
+        color:$color10;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-left: 15px;
+        font-weight: 600;
+        span {
+            color:$color7;
+            font-size: 13px;
+        }
+    }
+}

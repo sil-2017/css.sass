@@ -1,0 +1,42 @@
+.sub-container-el2{
+    h1 {
+        font-size: 30px;
+    }
+    &:first-child {
+        text-align: center;
+    }
+    &:nth-child(2) {
+        text-align: center;
+        font-size: 30px;
+    }
+    &:nth-last-child(1) {
+        text-align: center;
+    }
+    &-inf {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        color:$color15;
+        @media (max-width:550px){
+            padding: 5px;
+        }
+
+    }
+    &-img-ic img {
+        width: 100px;
+        height: auto;
+        border-radius: 23px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0 2px 15px 5px $color14;
+    }
+    &-img-l img {
+        width: 150px;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+        
+}

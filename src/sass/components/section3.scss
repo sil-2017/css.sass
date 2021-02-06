@@ -1,0 +1,78 @@
+.container2 {
+    margin-top: 50px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    min-height: 420px;
+    margin-bottom: 80px;
+    justify-content: center;
+
+
+    @media (max-width:740px) {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 0 10px;
+        justify-content: center;
+    }
+    @media (max-width:940px) {
+        padding: 0 10px;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+
+    }
+    &-card {
+        position: relative;
+        align-self: center;
+        
+        img {
+            position: absolute;
+            bottom: -260px;
+            left: 0;
+            width: 300px;
+            height: auto;
+            @media (max-width:1180px) {
+                bottom: -300px;
+                width: 200px;
+            }
+            @media (max-width:740px) {
+                bottom:0;
+                width: 200px;
+                position: relative;
+            }
+        }
+        .msg {
+            text-align: end;
+            font-size: 16px;
+            position: relative;
+            width: 280px;
+            margin: 10px 0;
+            align-items: space-around;
+            @media (max-width:940px) {
+                text-align: end;
+                font-size: 13px;
+                width: 240px;
+                margin: 10px 0;
+            }
+            span {
+                font-size: 30px;
+                display: block;
+                position: absolute;
+                right: -45px;
+                top: 15px;
+                @media (max-width:940px) {
+                    left: -13px;
+                }
+            }
+        }
+        &:last-child .msg {
+            text-align: start;
+            @media (max-width:1240px) {
+                text-align: end;
+            }
+        }
+        &:last-child .msg span {
+            left: -45px;
+            @media (max-width:1240px) {
+                left: -25px;
+            }
+        } 
+    }
+}
